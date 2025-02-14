@@ -1,0 +1,23 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SGE.Models
+{
+    [Table("Etapas")]
+    public class Etapas
+    {
+        [Column("Id")]
+        [Display(Name = "Id")]
+        public int Id { get; set; }
+
+        [Column("Titulo")]
+        [Display(Name = "Titulo das Etapas")]
+        public string Nome { get; set; } = string.Empty;
+
+        [Column("Ano")]
+        [Display(Name = "Ano das Etapas")]
+        public string Cpf { get; set; } = string.Empty;
+
+       
+    }
+}
